@@ -1,5 +1,5 @@
 package Kloeverly.presentation.controllers;
 
-public class MainViewController
+public class ShowBeboerController
 {
 }
