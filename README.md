@@ -70,6 +70,7 @@ This structure helps maintain a clear separation between **UI**, **domain logic*
 * **ViewManager.java:** Handles navigation between different JavaFX views.
 * **Controllers:** Each controller manages user interaction for a specific view or modal.
 
+---
 ## Technologies Used
 
 * **Java**
@@ -78,7 +79,6 @@ This structure helps maintain a clear separation between **UI**, **domain logic*
 * **Git & GitHub** for version control
 
 ---
-
 ## How to Run the Application
 
 1. Clone the repository:
