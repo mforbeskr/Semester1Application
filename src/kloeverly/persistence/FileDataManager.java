@@ -38,7 +38,7 @@ public class FileDataManager implements DataManager
       while ((line = reader.readLine()) != null) {
         if (line.isBlank()) continue;
 
-        if (!line.startsWith("\t")) { // Resident line
+        if (!line.startsWith("\t")) {
           String[] parts = line.split(",", -1);
           if (parts.length < 4) continue;
 
@@ -48,8 +48,8 @@ public class FileDataManager implements DataManager
 
           currentResident = new Resident(name, houseNumber, dob);
           list.add(currentResident);
-        } else if (currentResident != null) { // Task line starts with tab
-          String taskLine = line.substring(1); // remove leading tab
+        } else if (currentResident != null) {
+          String taskLine = line.substring(1);
           Task task = Task.fromCsvString(taskLine);
           if (task != null)
             currentResident.addTaskFromFile(task);
