@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="408.0" prefWidth="573.0"
+            xmlns="http://javafx.com/javafx/24.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="kloeverly.presentation.controllers.MainMenuController">
+    <top>
+        <VBox alignment="CENTER" spacing="6" BorderPane.alignment="CENTER">
+            <children>
+                <Label style="-fx-font-size: 24px; -fx-font-weight: bold;"
+                       text="Velkommen til Kløverly">
+                    <VBox.margin>
+                        <Insets top="4.0"/>
+                    </VBox.margin>
+                </Label>
+            </children>
+            <padding>
+                <Insets bottom="8" left="16" right="16" top="16"/>
+            </padding>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox alignment="TOP_CENTER" fillWidth="true" spacing="40.0"
+              BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="0.0" prefWidth="106.0"
+                       style="-fx-font-size: 20px;" text="Fællespoint:">
+                    <VBox.margin>
+                        <Insets bottom="-44.0" top="4.0"/>
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="faellesPointsLabel" layoutX="225.0" layoutY="18.0"
+                       prefHeight="9.0" prefWidth="33.0"
+                       style="-fx-font-size: 20px;" text="444">
+                    <VBox.margin>
+                        <Insets bottom="24.0" top="14.0"/>
+                    </VBox.margin>
+                </Label>
+
+                <HBox alignment="CENTER" fillHeight="true" prefHeight="50.0"
+                      prefWidth="583.0" spacing="24.0">
+                    <children>
+                        <Button onAction="#onOpenResidents" maxWidth="Infinity"
+                                minWidth="120.0" prefHeight="40.0"
+                                text="Beboere" HBox.hgrow="ALWAYS"/>
+
+                        <Button onAction="#onOpenTasks" maxWidth="Infinity"
+                                minWidth="120.0" prefHeight="40.0"
+                                text="Opret Opgave" HBox.hgrow="ALWAYS"/>
+
+                        <Button onAction="#onOpenAllData" maxWidth="Infinity"
+                                minWidth="56.0" prefHeight="40.0"
+                                prefWidth="56.0" text="Se Data"
+                                HBox.hgrow="ALWAYS"/>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="16.0" left="16.0" right="16.0" top="8.0"/>
+            </padding>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox>
+        </HBox>
+    </bottom>
+
+
+</BorderPane>
