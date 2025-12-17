@@ -75,6 +75,7 @@ This structure helps maintain a clear separation between **UI**, **domain logic*
 
 * **Java**
 * **JavaFX** (FXML, Controllers)
+* **SceneBuilder**
 * **File I/O** for persistence
 * **Git & GitHub** for version control
 
@@ -88,7 +89,9 @@ This structure helps maintain a clear separation between **UI**, **domain logic*
    ```
 2. Open the project in an IDE that supports JavaFX (e.g., IntelliJ IDEA).
 3. Ensure JavaFX is properly configured.
-4. Run the `RunApplication` class.
+4. Mark resources as “Resources Root” in IntelliJ. → 
+Right click on resources → Mark Directory as → Resources Root
+5. Run the `RunApplication` class.
 
 ---
 
